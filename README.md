@@ -126,9 +126,9 @@ Este projeto conecta diretamente ao **ODS 13 — Ação Climática**, contribuin
 | Nome Completo | RM |
 
 | Arthur Germano Pinheiro | rm574042 |
-| Artur Maia | rm572624 |
-| Bruno | rm572723 |
-| Joao Pedro | rm572723 |
+| Artur Novazzi Maia | rm572624 |
+| Bruno Araújo Castro | rm572723 |
+| João Pedro De Souza | rm571437 |
 
 ## 🏫 Informações Acadêmicas
 
