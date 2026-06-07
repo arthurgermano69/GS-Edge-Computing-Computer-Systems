@@ -1,20 +1,3 @@
-## Integrantes do Grupo
-
-| Nome Completo | RM |
-
-| Arthur Germano Pinheiro | rm574042 |
-| Artur Maia | rm572624 |
-| Bruno | rm572723 |
-| Joao Pedro | rm572723 |
-
-## Informações Acadêmicas
-
-**Disciplina:** Edge Computing & Computer Systems  
-**Professores:** Prof. Paulo Marcotti e Prof. Lucas Demetrius  
-**Curso:** Engenharia de Software — 1º Ano  
-**Instituição:** FIAP
-
-
 # OrbitMax Sentinel
 
 > Monitoramento de queimadas e desmatamento via dados satelitais e sensores de campo.
