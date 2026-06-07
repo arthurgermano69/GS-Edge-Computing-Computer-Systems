@@ -7,7 +7,7 @@
 | Bruno | rm572723 |
 | Joao Pedro | rm572723 |
 
-## 🏫 Informações Acadêmicas
+## Informações Acadêmicas
 
 **Disciplina:** Edge Computing & Computer Systems  
 **Professores:** Prof. Paulo Marcotti e Prof. Lucas Demetrius  
@@ -41,7 +41,7 @@ O projeto conecta diretamente ao **ODS 13 — Ação Climática**, propondo uma 
 
 | ESP32 | Microcontrolador principal com WiFi | — |
 | DHT22 | Sensor de temperatura e umidade | GPIO 15 |
-| Potenciômetro | Simula sensor de fumaça (MQ-2) | GPIO 34 |
+| Potenciômetro | Simula sensor de fumaça | GPIO 34 |
 | LED Vermelho | Alerta visual de perigo | GPIO 2 |
 | LED Verde | Status normal do sistema | GPIO 4 |
 | Buzzer | Alarme sonoro de emergência | GPIO 5 |
@@ -71,7 +71,7 @@ O servidor Python recebe os dados do ESP32, consulta a API FIRMS da NASA pergunt
 
 A API FIRMS (Fire Information for Resource Management System) disponibiliza dados reais dos satélites VIIRS e MODIS que sobrevoam o Brasil várias vezes ao dia, detectando focos de calor com alta precisão geográfica.
 
-## 🔌 Estrutura do Circuito
+## Estrutura do Circuito
 
 ```
 
