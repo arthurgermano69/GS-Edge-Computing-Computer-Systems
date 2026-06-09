@@ -15,15 +15,15 @@ const char* SERVIDOR = "http://SEU_IP_LOCAL:5000/dados";
 // Limiares de alerta — valores acima desses disparam o sistema.
 
 const int LIMITE_TEMPERATURA = 60;  // graus Celsius
-const int LIMITE_FUMACA      = 400; // valor analógico do sensor (0 a 1023)
+const int LIMITE_FUMACA = 400; // valor analógico do sensor (0 a 1023)
 
 // Definição dos pinos utilizados no circuito.
 
-#define PINO_DHT    15  // Sensor de temperatura e umidade DHT22
-#define PINO_FUMACA 34  // Potenciômetro simulando sensor de fumaça MQ-2
-#define PINO_LED_VM  2  // LED vermelho — alerta de perigo
-#define PINO_LED_VD  4  // LED verde — status normal
-#define PINO_BUZZER  5  // Buzzer — alarme sonoro
+#define PINO_DHT 15 
+#define PINO_FUMACA 34  
+#define PINO_LED_VM 2  
+#define PINO_LED_VD 4  
+#define PINO_BUZZER 5  
 
 // Inicializa o sensor DHT22 no pino definido.
 
@@ -105,9 +105,9 @@ void enviarDados(float temperatura, float umidade, int fumaca, String status) {
   
   StaticJsonDocument<200> doc;
   doc["temperatura"] = temperatura;
-  doc["umidade"]     = umidade;
-  doc["fumaca"]      = fumaca;
-  doc["status"]      = status;
+  doc["umidade"] = umidade;
+  doc["fumaca"] = fumaca;
+  doc["status"] = status;
 
   String payload;
   serializeJson(doc, payload);
@@ -132,8 +132,8 @@ void loop() {
   // Lê os valores atuais dos sensores.
   
   float temperatura = dht.readTemperature();
-  float umidade     = dht.readHumidity();
-  int   fumaca      = analogRead(PINO_FUMACA);
+  float umidade = dht.readHumidity();
+  int fumaca = analogRead(PINO_FUMACA);
 
   // Verifica leitura válida do DHT22
  
@@ -146,8 +146,8 @@ void loop() {
   // Exibe os valores lidos no monitor serial.
   
   Serial.print("Temperatura: "); Serial.print(temperatura); Serial.println(" °C");
-  Serial.print("Umidade: ");     Serial.print(umidade);     Serial.println(" %");
-  Serial.print("Fumaça: ");      Serial.println(fumaca);
+  Serial.print("Umidade: "); Serial.print(umidade); Serial.println(" %");
+  Serial.print("Fumaça: "); Serial.println(fumaca);
 
   // Verifica se algum limiar foi ultrapassado e define o status do sistema.
   

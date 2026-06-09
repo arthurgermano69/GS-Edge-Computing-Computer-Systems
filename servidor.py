@@ -25,10 +25,8 @@ def consultar_nasa():
     # Monta a URL da requisição com a chave, satélite VIIRS e área monitorada.
     # O número "1" no final indica que queremos dados das últimas 24 horas.
     
-    url = (
-        f"https://firms.modaps.eosdis.nasa.gov/api/area/csv/"
-        f"{NASA_API_KEY}/VIIRS_SNPP_NRT/{AREA}/1"
-    )
+    url = (f"https://firms.modaps.eosdis.nasa.gov/api/area/csv/"f"{NASA_API_KEY}/VIIRS_SNPP_NRT/{AREA}/1")
+    
     try:
         # Faz a requisição à NASA com timeout de 10 segundos.
         
