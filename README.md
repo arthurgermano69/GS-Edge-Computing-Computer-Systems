@@ -67,7 +67,7 @@ ESP32
 └── GND      →  DHT22 (GND) + Potenciômetro (GND) + LEDs + Buzzer
 ```
 
-![Circuito OrbitMax](Circuito.png)
+![Circuito OrbitMax](assets/Circuito.png)
 
 **Simulação disponível no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466048441914844161)
 
