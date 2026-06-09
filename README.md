@@ -69,6 +69,8 @@ ESP32
 
 ```
 
+![Circuito OrbitMax](Circuito.png)
+
 **Simulação disponível no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466048441914844161)
 
 ## Instruções de Execução
