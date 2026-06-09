@@ -71,6 +71,17 @@ ESP32
 
 **Simulação disponível no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466048441914844161)
 
+## ⚠️ Observação sobre a Simulação
+
+A simulação no Wokwi demonstra o funcionamento completo do circuito — leitura dos sensores, acionamento do LED e buzzer. Porém, a comunicação entre o ESP32 e o servidor Python **não funciona no Wokwi gratuito** devido a limitações de rede do simulador.
+
+Para a integração completa funcionar (ESP32 + Python + NASA), é necessário:
+
+- **Wokwi Premium** — permite comunicação com servidores externos, ou
+- **Hardware físico** — ESP32 real conectado à rede local
+
+O código está preparado para ambos os cenários. A demonstração completa do sistema integrado é feita com o circuito físico.
+
 ## Instruções de Execução
 
 ### Pré-requisitos
