@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Chave de autenticação da API FIRMS da NASA — necessária para consultar focos de calor.
 
-NASA_API_KEY = "2535c52945f261dca0101634b2f858a4"
+NASA_API_KEY = "SUA_CHAVE_AQUI"
 
 # Coordenadas da área monitorada (Mata Atlântica — SP, PR, MG).
 # Formato: longitude_min, latitude_min, longitude_max, latitude_max.
