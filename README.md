@@ -21,7 +21,7 @@ O projeto conecta diretamente ao **ODS 13 — Ação Climática**, propondo uma 
 ## Componentes Utilizados
 
 | Componente | Função | Pino ESP32 |
-
+|---|---|---|
 | ESP32 | Microcontrolador principal com WiFi | — |
 | DHT22 | Sensor de temperatura e umidade | GPIO 15 |
 | Potenciômetro | Simula sensor de fumaça | GPIO 34 |
@@ -44,7 +44,7 @@ O ESP32 lê os sensores a cada 5 segundos. Se a temperatura ultrapassar 60°C ou
 O servidor Python recebe os dados do ESP32, consulta a API FIRMS da NASA perguntando se existem focos de calor detectados por satélite na região da Mata Atlântica, e cruza as duas informações para gerar uma conclusão:
 
 | Sensor | Satélite NASA | Resultado |
-
+|---|---|---|
 | Disparou | Confirmou foco | ALERTA CRÍTICO — queimada confirmada |
 | Disparou | Sem foco | ATENÇÃO — possível falso positivo |
 | Normal | Detectou foco | MONITORAMENTO — foco distante do sensor |
@@ -57,7 +57,6 @@ A API FIRMS (Fire Information for Resource Management System) disponibiliza dado
 ## Estrutura do Circuito
 
 ```
-
 ESP32
 ├── GPIO 15  →  DHT22 (DATA)
 ├── GPIO 34  →  Potenciômetro (SIG) — simula fumaça
@@ -66,7 +65,6 @@ ESP32
 ├── GPIO 5   →  Buzzer → GND
 ├── 3.3V     →  DHT22 (VCC) + Potenciômetro (VCC)
 └── GND      →  DHT22 (GND) + Potenciômetro (GND) + LEDs + Buzzer
-
 ```
 
 ![Circuito OrbitMax](Circuito.png)
@@ -126,7 +124,7 @@ Este projeto conecta diretamente ao **ODS 13 — Ação Climática**, contribuin
 ## Integrantes do Grupo
 
 | Nome Completo | RM |
-
+|---|---|
 | Arthur Germano Pinheiro | rm574042 |
 | Artur Novazzi Maia | rm572624 |
 | Bruno Araújo Castro | rm572723 |
