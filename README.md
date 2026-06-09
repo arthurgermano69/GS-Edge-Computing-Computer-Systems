@@ -69,7 +69,7 @@ ESP32
 
 ```
 
-**Simulação disponível no Wokwi:** (https://wokwi.com/projects/466048441914844161)
+**Simulação disponível no Wokwi:** [Clique aqui para acessar](https://wokwi.com/projects/466048441914844161)
 
 ## Instruções de Execução
 
@@ -130,7 +130,7 @@ Este projeto conecta diretamente ao **ODS 13 — Ação Climática**, contribuin
 | Bruno Araújo Castro | rm572723 |
 | João Pedro De Souza | rm571437 |
 
-## 🏫 Informações Acadêmicas
+## Informações Acadêmicas
 
 **Disciplina:** Edge Computing & Computer Systems  
 **Professores:** Prof. Paulo Marcotti e Prof. Lucas Demetrius  
