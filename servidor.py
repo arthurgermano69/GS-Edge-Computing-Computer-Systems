@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Chave de autenticação da API FIRMS da NASA — necessária para consultar focos de calor.
 
-NASA_API_KEY = "SUA_CHAVE_AQUI"
+NASA_API_KEY = "2535c52945f261dca0101634b2f858a4"
 
 # Coordenadas da área monitorada (Mata Atlântica — SP, PR, MG).
 # Formato: longitude_min, latitude_min, longitude_max, latitude_max.
@@ -15,8 +15,8 @@ AREA = "-50,-25,-40,-18"
 
 # Limiares de alerta — valores acima desses disparam o sistema.
 
-LIMITE_TEMPERATURA = 60   # graus Celsius
-LIMITE_FUMACA = 400       # valor analógico do sensor (0 a 1023)
+LIMITE_TEMPERATURA = 60
+LIMITE_FUMACA = 400
 
 # Consulta a API FIRMS da NASA e retorna focos de calor na área.
 
@@ -57,7 +57,7 @@ def consultar_nasa():
         
         # Retorna -1 em caso de falha na comunicação com a NASA.
         
-        print(f"  [ERRO] Falha ao consultar NASA: {e}")
+        print(f"[ERRO] Falha ao consultar NASA: {e}")
         return -1, None
 
 # Cruza dados do sensor com dados da NASA e retorna o nível de alerta.
@@ -100,9 +100,7 @@ def receber_dados():
 
     # Exibe os dados recebidos no terminal.
     
-    print("\n" + "=" * 50)
     print(f"DADOS RECEBIDOS DO ESP32 — {horario}")
-    print("=" * 50)
     print(f"Temperatura: {temperatura}°C")
     print(f"Fumaça: {fumaca} (limite: {LIMITE_FUMACA})")
     print(f"Umidade: {umidade}%")
@@ -125,8 +123,7 @@ def receber_dados():
     nivel, mensagem = avaliar_situacao(temperatura, fumaca, focos)
 
     print()
-    print(f"  {mensagem}")
-    print("=" * 50)
+    print(f"{mensagem}")
 
     # Retorna a resposta ao ESP32 com o resultado da análise.
     
@@ -156,11 +153,9 @@ def home():
 
 
 if __name__ == "__main__":
-    print("=" * 50)
     print("OrbitMax Sentinel — Servidor iniciado")
     print("Aguardando dados do ESP32...")
     print("Rodando em http://localhost:5000")
-    print("=" * 50)
     
     # Inicia o servidor Flask em todas as interfaces de rede na porta 5000.
     

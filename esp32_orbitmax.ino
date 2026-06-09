@@ -14,8 +14,8 @@ const char* SERVIDOR = "http://SEU_IP_LOCAL:5000/dados";
 
 // Limiares de alerta — valores acima desses disparam o sistema.
 
-const int LIMITE_TEMPERATURA = 60;  // graus Celsius
-const int LIMITE_FUMACA = 400; // valor analógico do sensor (0 a 1023)
+const int LIMITE_TEMPERATURA = 60;
+const int LIMITE_FUMACA = 400;
 
 // Definição dos pinos utilizados no circuito.
 
@@ -32,7 +32,7 @@ DHT dht(PINO_DHT, DHT22);
 void setup() {
   Serial.begin(115200);
 
-  // Configura os pinos de saída para LEDs e buzzer.
+// Configura os pinos de saída para LEDs e buzzer.
   
   pinMode(PINO_LED_VM, OUTPUT);
   pinMode(PINO_LED_VD, OUTPUT);
@@ -42,7 +42,7 @@ void setup() {
 
   Serial.println("OrbitMax Sentinel — ESP32");
 
-  // Conecta ao WiFi
+// Conecta ao WiFi
   
   Serial.print("Conectando ao WiFi");
   WiFi.begin(SSID, PASSWORD);
@@ -55,7 +55,7 @@ void setup() {
   Serial.print("IP do ESP32: ");
   Serial.println(WiFi.localIP());
 
-  // Liga o LED verde ao iniciar indicando que o sistema está operacional.
+// Liga o LED verde ao iniciar indicando que o sistema está operacional.
   
   digitalWrite(PINO_LED_VD, HIGH);
 }
@@ -73,7 +73,7 @@ void acionarAlerta() {
     delay(200);
   }
   
-  // Mantém o LED vermelho aceso após as piscadas.
+// Mantém o LED vermelho aceso após as piscadas.
   
   digitalWrite(PINO_LED_VM, HIGH);
 }
